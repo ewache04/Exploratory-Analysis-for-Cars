@@ -1,100 +1,98 @@
-# README: Principal Components Analysis and Linear Regression on the `mtcars` Dataset
+# PCA and Linear Regression Analysis on the `mtcars` Dataset
 
 ## Project Overview
 
-This project is an advanced analysis of the `mtcars` dataset, focusing on Principal Components Analysis (PCA) and linear regression modeling. The project highlights key data exploration, preprocessing, and visualization steps, along with predictive modeling to extract insights and patterns from the dataset. The comprehensive workflow demonstrates my proficiency in data analytics, visualization, and machine learning.
+This project explores the `mtcars` dataset through a comprehensive workflow involving data exploration, Principal Components Analysis (PCA), and linear regression modeling. It highlights advanced data preprocessing, visualization, and predictive modeling techniques, emphasizing practical applications in data science and analytics.
 
 ---
 
 ## Features
 
 ### 1. **Data Exploration**
-- **Dataset:** The analysis begins by loading the `mtcars` dataset, inspecting its structure, and summarizing the data.
-- **Key Tasks:**
-  - Display the first and last six rows of the dataset.
-  - View dataset structure and summary statistics.
-  - Identify columns and rows, calculate quantiles, and variance of specific variables.
+- **Dataset Insights**:
+  - Loaded the `mtcars` dataset from a CSV file.
+  - Inspected its structure, summarized key statistics, and visualized data distributions.
+  - Tasks included quantile and variance analysis for specific variables like `wt` (weight).
 
-### 2. **Visualization**
-- **Histogram of Horsepower (hp):**
-  - A histogram visualizes the distribution of horsepower among the cars in the dataset.
-  - **Screenshot:** `screenshots/histogram-of-mtcars.png`
+### 2. **Principal Components Analysis (PCA)**
+- **Dimensionality Reduction**:
+  - Applied PCA using a correlation matrix to identify relationships among variables.
+  - Determined key variables strongly associated with `mpg` (mileage), such as `wt` and `hp`.
 
-- **Principal Components Analysis (PCA):**
-  - PCA reduces the dimensionality of the dataset, revealing relationships among variables.
-  - Analyzed loadings to determine the strongest contributors to mileage (mpg).
+### 3. **Predictive Modeling**
+- **Linear Regression**:
+  - Built a regression model to predict mileage (`mpg`) based on other features in the dataset.
+  - Evaluated the model's performance using summary statistics.
 
-### 3. **Data Preprocessing**
-- Scaled a hypothetical car's features for inclusion in the PCA model.
-- Checked and ensured matrix dimensions for compatibility with PCA transformations.
-
-### 4. **Predictive Modeling**
-- Built a linear regression model to predict mileage (`mpg`) based on other variables in the dataset.
-- Evaluated the regression model for fit and significance of predictors.
+### 4. **Exploratory Insights**
+- Identified specific subsets of vehicles:
+  - Sports cars with high horsepower (`hp > 200`) and low weight (`wt < 3`).
+  - Cars offering good mileage (`mpg > 20`).
+- Analyzed relationships between car features to make data-driven recommendations.
 
 ---
 
 ## Key Tasks and Outcomes
 
-1. **Principal Components Analysis (PCA):**
-   - Extracted components to explain the variance in the dataset.
-   - Identified the strongest variables contributing to mileage (mpg), such as `wt` (weight) and `hp` (horsepower).
+1. **Data Exploration**:
+   - Reviewed the dataset structure, variable names, and summary statistics.
+   - Generated visualizations, including histograms for horsepower (`hp`).
 
-2. **Linear Regression Model:**
-   - Built a regression model to predict `mpg` using all other variables.
-   - Evaluated the model's performance using summary statistics.
+   ![Histogram of Horsepower](screenshots/histogram-of-mtcars.png)
 
-3. **Exploratory Insights:**
-   - Determined sports cars (hp > 200 and wt < 3) and cars with good mileage (mpg > 20).
-   - Analyzed relationships between key variables to recommend optimizations.
+2. **Principal Components Analysis (PCA)**:
+   - Reduced dimensionality to understand variable contributions.
+   - Identified key variables influencing mileage, highlighting `wt` and `hp`.
 
-4. **Custom Analysis:**
-   - Defined and scaled characteristics of a hypothetical car to assess its performance in PCA.
+3. **Regression Modeling**:
+   - Developed a linear regression model to predict `mpg`.
+   - Evaluated model accuracy and identified significant predictors.
+
+4. **Custom Analysis**:
+   - Defined and scaled characteristics of a hypothetical car to analyze its performance using PCA.
+   - Checked compatibility of matrices for PCA transformations and performed matrix multiplication.
 
 ---
 
 ## Project Artifacts
 
-### 1. **Screenshots**
-- Histogram of `hp` distribution: `screenshots/histogram-of-mtcars.png`
-- PCA visualizations: Detailed in `mtcars_analysis.pdf`
+### Screenshots
+- **Histogram of Horsepower**:
+  ![Histogram of Horsepower](screenshots/histogram-of-mtcars.png)
 
-### 2. **Files**
+- **PCA Loadings**:
+  ![PCA Loadings](screenshots/pca-loadings.png)
+
+### Files
 - `mtcars.csv`: Dataset used for analysis.
-- `mtcars_analysis.pdf`: Comprehensive report of the analysis, including visualizations.
-- `mtcars_model_Rcode.R`: Script containing the complete R code used in the analysis.
+- `JeremiahOchepo_Assignment7_analysis_code.R`: Complete R code for the project.
 
 ---
 
 ## Usage Instructions
 
 ### Requirements
-- R or RStudio installed on your system.
-- Required packages: `tidyverse`, `cluster`.
+- **Software**: R or RStudio installed on your system.
+- **Packages**: Ensure the `tidyverse` package is installed.
 
 ### Steps
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/mtcars-pca-analysis.git
-   cd mtcars-pca-analysis
+   git clone https://github.com/your-username/mtcars-pca-regression.git
+   cd mtcars-pca-regression
    ```
 
-2. Open and execute the provided R script:
+2. Open the R script:
    ```bash
-   Rscript mtcars_model_Rcode.R
+   Rscript JeremiahOchepo_Assignment7_analysis_code.R
    ```
 
-3. View the analysis and visualizations in `mtcars_analysis.pdf`.
-
----
-
-## Insights for USCIS Petition
-
-This project demonstrates my advanced proficiency in data analysis, visualization, and predictive modeling. By employing PCA and regression techniques, I showcased a robust understanding of statistical methods and their applications to real-world datasets. This technical expertise aligns directly with my proposed initiative to leverage machine learning for solving complex societal problems.
+3. View the analysis and visualizations generated during the execution.
 
 ---
 
 ## Contact Information
-**Author:** Jeremiah Ochepo  
-**Email:** [jochepo4growth@gmail.com](mailto:jochepo4growth@gmail.com)  
-**GitHub Repository:** [mtcars PCA Analysis](https://github.com/your-username/mtcars-pca-analysis)  
+
+**Author**: Jeremiah Ochepo  
+**Email**: [jochepo4growth@gmail.com](mailto:jochepo4growth@gmail.com)  
+**GitHub Repository**: [mtcars PCA and Regression Analysis](https://github.com/your-username/mtcars-pca-regression)  
